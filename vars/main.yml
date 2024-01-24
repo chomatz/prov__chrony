@@ -1,2 +1,11 @@
 ---
-# vars file for prov__chrony
+
+chrony:
+  # sample time sources:
+  # pool pool.ntp.org
+  # server server.pool.ntp.org
+  # peer full.server.fqdn
+  sources: |
+    pool pool.ntp.org iburst
+
+...

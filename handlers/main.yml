@@ -1,2 +1,9 @@
 ---
-# handlers file for prov__chrony
+
+- name: restart chronyd
+  ansible.builtin.service:
+    name: chronyd
+    state: restarted
+    enabled: true
+
+...
